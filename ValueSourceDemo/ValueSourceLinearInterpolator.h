@@ -13,11 +13,13 @@ public:
 		Time(0.0f)
 	{ }
 
-	float GetCurrentValue () const override {
+	float GetCurrentValue () const override
+	{
 		return Value;
 	}
 
-	void SetTime (float t) {
+	void SetTime (float t)
+	{
 		Time = t;
 
 		if (Time < 0.0f)
